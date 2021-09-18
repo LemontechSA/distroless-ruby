@@ -3,7 +3,7 @@
 ## build and run
 
 ```shell
-$ docker build -t unasuke/distroless-ruby:3.0 .
+$ docker build -t public.ecr.aws/lemontech/distroless-ruby:3.0 .
 [+] Building 33.2s (15/15) FINISHED
  => [internal] load build definition from Dockerfile                                                                                      0.0s
  => => transferring dockerfile: 560B                                                                                                      0.0s
@@ -36,12 +36,12 @@ $ docker build -t unasuke/distroless-ruby:3.0 .
  => exporting to image                                                                                                                    0.4s
  => => exporting layers                                                                                                                   0.3s
  => => writing image sha256:0674df1d60bb24b3cb6ca731387a5c4faa8b55dd9e5fd836c7e201123fffc68a                                              0.0s
- => => naming to docker.io/unasuke/distroless-ruby:3.0                                                                                    0.0s
+ => => naming to public.ecr.aws/lemontech/distroless-ruby:3.0                                                                                    0.0s
 
-$ docker run --rm unasuke/distroless-ruby:3.0 ruby -v
+$ docker run --rm public.ecr.aws/lemontech/distroless-ruby:3.0 ruby -v
 ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-linux]
 
-$ docker run --rm unasuke/distroless-ruby:3.0 ruby -e "pp RUBY_PLATFORM"
+$ docker run --rm public.ecr.aws/lemontech/distroless-ruby:3.0 ruby -e "pp RUBY_PLATFORM"
 "x86_64-linux"
 ```
 
