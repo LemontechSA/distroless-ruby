@@ -1,6 +1,6 @@
 FROM ruby:3.0.0-buster as ruby
 
-LABEL org.opencontainers.image.source=https://github.com/unasuke/distroless-ruby
+LABEL org.opencontainers.image.source=https://github.com/LemontechSA/distroless-ruby
 
 ADD https://github.com/coord-e/magicpak/releases/latest/download/magicpak-x86_64-unknown-linux-musl /usr/bin/magicpak
 RUN chmod +x /usr/bin/magicpak
